@@ -1,6 +1,6 @@
 # Logging::Facade
 
-TODO: Write a gem description
+I kept rewriting a simple, logging provider/facade so I just decided to make it its own, little project.
 
 ## Installation
 
