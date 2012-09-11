@@ -6,15 +6,12 @@ I kept rewriting a simple, logging provider/facade so I just decided to make it 
 
 Add this line to your application's Gemfile:
 
-    gem 'logging-facade'
+    gem 'logging-facade',  git: 'https://github.com/scottweaver/logging-facade.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install logging-facade
 
 ## Usage
 
