@@ -14,8 +14,24 @@ And then execute:
 
 
 ## Usage
+By default , LoggingFacade will use the built-in Ruby Logger.  You can change this by overriding the default logger at runtime:
 
-TODO: Write usage instructions here
+    # Example of using the Rails logger
+    LoggingFacade::Logger.logger = Rails.logger
+
+Then in your code:
+
+    require 'logging-facade'
+
+    class MyClass
+        include LoggingFacade::Logger
+
+        def something
+            logger.info 'Some log message.'
+        end
+    end
+
+That's it.  What logging-facade is doing really isn't all that complicated but it was something I found I was repeating over and over so I just pulled out into its own gem.
 
 ## Contributing
 
